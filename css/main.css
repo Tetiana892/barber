@@ -431,7 +431,6 @@ button:hover, button:focus {
   line-height: 1.35;
   letter-spacing: 0.05em;
   color: #303030;
-  display: inline-block;
 }
 
 .benefits-items > span::after {
