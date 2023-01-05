@@ -1,0 +1,32 @@
+.footer {
+  padding: 56px 0;
+}
+.footer > .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-copy {
+  display: block;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--another-text);
+}
+.footer-list {
+  display: block;
+  display: flex;
+  gap: 40px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--light-text);
+}
+.footer-links:hover,
+.footer-links:focus {
+  color: var(--acent-color);
+}

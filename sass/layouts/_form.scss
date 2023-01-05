@@ -1,0 +1,67 @@
+.contact-wrap {
+  background-color: #191c26;
+  background-image: url("../img/bg-min.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center right calc(50% - 15px - 392px);
+}
+.contact-wrap > .container {
+  display: flex;
+}
+
+.form {
+  width: calc(50% + 15px);
+  padding-top: 130px;
+  padding-bottom: 183px;
+}
+.form-title {
+  color: var(--primari-header-color);
+  margin-bottom: 44px;
+}
+.contact-btn {
+  padding: 12px 38px;
+  background-color: transparent;
+  color: var(--primari-header-color);
+}
+.contact-form-item {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: var(--primari-header-color);
+  margin-bottom: 44px;
+  cursor: pointer;
+  transition: border-bottom-color 500ms linear;
+}
+.contact-form-item::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+  text-transform: uppercase;
+  transition: color 500ms linear;
+}
+.contact-form-item:focus,
+.contact-form-item:hover {
+  outline: transparent;
+  border-bottom-color: var(--primari-header-color);
+}
+.contact-form-item:focus::placeholder,
+.contact-form-item:hover::placeholder {
+  color: var(--primari-header-color);
+}
+.contact-input {
+  width: 270px;
+  height: 24px;
+}
+.contact-input:first-child {
+  margin-right: 30px;
+}
+.contact-textarea {
+  width: 570px;
+  height: 76px;
+  resize: none;
+}
+.user {
+  display: flex;
+}

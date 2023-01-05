@@ -49,3 +49,36 @@
   letter-spacing: 0.02em;
   color: var(--another-text);
 }
+.hero-soc {
+  width: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 27px;
+  padding-bottom: 40px;
+}
+.hero-list {
+  display: flex;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+  align-items: center;
+
+  gap: 40px;
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: var(--light-text);
+  }
+}
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--light-text);
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
+}
