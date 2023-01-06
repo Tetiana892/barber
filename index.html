@@ -477,7 +477,94 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>X</button>
+        <button type="button" class="modal-close" data-modal-close>
+          <svg width="15" height="15">
+            <use href="./img/symbol-defs.svg#icon-close_24px"></use>
+          </svg>
+        </button>
+        <p class="modal-heading">Contact us</p>
+        <form action="">
+          <div class="modal-input-group">
+            <label for="name">Enter your name</label>
+            <div class="modal-input-wrapper">
+              <input
+                type="text"
+                class="modal-input"
+                placeholder="Name"
+                name="name"
+                id="name"
+                required
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./img/symbol-defs.svg#icon-men"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-input-group">
+            <label for="email">Enter your email</label>
+            <div class="modal-input-wrapper">
+              <input
+                type="email"
+                class="modal-input"
+                placeholder="Email"
+                name="email"
+                id="email"
+                required
+              />
+
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./img/symbol-defs.svg#icon-letter"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-input-group">
+            <label for="tel">Enter your phone number</label>
+            <div class="modal-input-wrapper">
+              <input
+                type="tel"
+                id="tel"
+                class="modal-input invalid"
+                placeholder="+380 (63) 111-11-11"
+                title="+380 (63) 111-11-11"
+                name="tel"
+                required
+                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              /><svg class="modal-input-icon" width="18" height="18">
+                <use href="./img/symbol-defs.svg#icon-phon-2"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-input-group">
+            <label for="comment">Enter a comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="modal-text"
+              placeholder="Сomment"
+            ></textarea>
+          </div>
+
+          <div class="modal-input-group">
+            <input
+              type="checkbox"
+              name="politic"
+              id="politic"
+              class="modal-politic-check visually-hidden"
+            />
+            <label for="politic" class="modal-politic-label">
+              <span class="modal-politic-check2">
+                <svg width="11" height="9">
+                  <use href="./img/symbol-defs.svg#icon-checked"></use>
+                </svg>
+              </span>
+              User Policy</label
+            >
+          </div>
+
+          <button type="submit" class="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

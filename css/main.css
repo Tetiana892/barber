@@ -811,13 +811,14 @@ button:hover, button:focus {
 
 .modal {
   position: absolute;
+  padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  padding: 40px;
-  width: 500px;
-  min-height: 600px;
+  min-width: 500px;
+  min-height: 500px;
   background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   transition: transform 250ms linear;
 }
@@ -829,11 +830,178 @@ button:hover, button:focus {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 5px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-heading {
+  font-size: 24px;
+  color: #191c26;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.submit {
+  padding: 12px 38px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-input {
+  padding-left: 42px;
+  width: 95%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: var(--second-text);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:required {
+  border-color: rgb(82, 78, 80);
+}
+
+.modal-input:focus,
+.modal-input:hover {
+  border-color: var(--acent-color);
+  outline: transparent;
+}
+
+.modal-input:focus + svg,
+.modal-input:hover + svg {
+  fill: var(--acent-color);
+}
+
+.modal-input::-moz-placeholder {
+  color: var(--acent-color);
+  font-weight: 700;
+}
+
+.modal-input:-ms-input-placeholder {
+  color: var(--acent-color);
+  font-weight: 700;
+}
+
+.modal-input::placeholder {
+  color: var(--acent-color);
+  font-weight: 700;
+}
+
+.modal-input:not(:focus):not(:-moz-placeholder-shown):valid {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.modal-input:not(:focus):not(:-ms-input-placeholder):valid {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.modal-input:not(:focus):not(:placeholder-shown):valid {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.modal-input:not(:focus):not(:-moz-placeholder-shown):invalid {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.modal-input:not(:focus):not(:-ms-input-placeholder):invalid {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.modal-input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.modal-input-group {
+  margin-bottom: 10px;
+}
+
+.modal-input-group label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.01em;
+  color: #191c26;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-text {
+  width: 100%;
+  height: 140px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 10px;
+  color: #303030;
+  font-size: 14px;
+  resize: vertical;
+  max-height: 250px;
+  padding: 10px;
+}
+
+input[type=radio]:checked + label {
+  background-color: var(--acent-color);
+}
+
+.modal-input-wrapper {
+  position: relative;
+}
+
+.modal-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: #5a5959;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-label-wrapper span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-label-wrapper {
+  position: relative;
+}
+
+.modal-label-wrapper svg {
+  top: 66px;
+}
+
+label.modal-politic-label {
+  display: flex;
+  align-items: center;
+  color: var(--acent-color);
+}
+
+.modal-politic-check2 {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #303030;
+  border-radius: 2px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal-politic-check2 svg {
+  fill: transparent;
+}
+
+.modal-politic-check:checked + label > span {
+  border: none;
+  background-color: var(--acent-color);
+}
+
+.modal-politic-check:checked + label > span svg {
+  fill: #fff;
 }/*# sourceMappingURL=main.css.map */
