@@ -23,6 +23,12 @@
   margin-bottom: 20px;
 }
 .about-after-title {
+  font-size: 16px;
+  line-height: 1.62;
+  @media screen and(min-width:768px) {
+    font-size: 18px;
+    line-height: 1.66;
+  }
   color: var(--second-text);
   margin-bottom: 20px;
 }
@@ -39,4 +45,9 @@
 .pre-title {
   display: flex;
   align-items: center;
+}
+.list-about {
+  @media screen and(min-width:768px) {
+    display: none;
+  }
 }

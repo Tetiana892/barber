@@ -10,13 +10,16 @@
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }
 .header-logo {
   display: block;
   margin-right: 130px;
+}
+.header-link.current {
+  color: var(--acent-color);
 }
 .header-link {
   font-weight: 600;
@@ -32,10 +35,17 @@
 }
 .header-list {
   display: flex;
-  gap: 30px;
+  gap: 16px;
+  @media screen and(min-width:768px) {
+    gap: 30px;
+  }
 }
+
 .header-menu {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
   margin-left: auto;
   align-items: center;
 }
