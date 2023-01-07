@@ -82,6 +82,8 @@ a {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 ul {
@@ -115,11 +117,26 @@ button:hover, button:focus {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .header {
   position: absolute;
   width: 100%;
@@ -132,6 +149,11 @@ button:hover, button:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 480px) {
+  .menu-nav {
+    display: none;
+  }
 }
 
 .header-logo {
@@ -186,14 +208,24 @@ button:hover, button:focus {
 }
 
 .hero-right {
-  padding: 272px 0 206px 96px;
+  padding: 208px 113px 209px 31px;
   flex-grow: 1;
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../img/header-min.jpg");
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("..//../img/header-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #303030;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 768px) {
+  .hero-right {
+    padding: 272px 0 237px 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-right {
+    padding: 272px 0 206px 96px;
+  }
 }
 
 .hero-pretitle {
@@ -217,18 +249,30 @@ button:hover, button:focus {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
-  line-height: 1.18;
+  font-size: 48px;
+  line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--primari-header-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 72px;
+    line-height: 1.18;
+  }
 }
 
 .hero-text {
   width: 357px;
-  font-size: 18px;
-  line-height: 1.66;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
   color: var(--another-text);
+}
+@media screen and (min-width: 768px) {
+  .hero-text {
+    font-size: 18px;
+    line-height: 1.66;
+  }
 }
 
 .hero-soc {
@@ -237,6 +281,11 @@ button:hover, button:focus {
   align-items: flex-end;
   padding-left: 27px;
   padding-bottom: 40px;
+}
+@media screen and (max-width: 480px) {
+  .hero-soc {
+    display: none;
+  }
 }
 
 .hero-list {
@@ -1004,4 +1053,78 @@ label.modal-politic-label {
 
 .modal-politic-check:checked + label > span svg {
   fill: #fff;
+}
+
+.menu-container {
+  position: fixed;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primari-header-color);
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-container.is-open {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.container--mobile {
+  height: 100%;
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.menu-btn .icon-cross {
+  display: none;
+}
+
+.menu-btn.is-open .icon-cross {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+.menu-toggle {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  min-height: 40px;
+  min-width: 40px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: var(--primari-header-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: var(--acent-color);
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.icon-cross {
+  fill: var(--primari-header-color);
 }/*# sourceMappingURL=main.css.map */
