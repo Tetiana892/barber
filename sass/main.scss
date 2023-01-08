@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./base/common";
 @import "./base/reset";
+
 @import "./component/btn";
 @import "./component/container";
 @import "./layouts/header";
@@ -15,5 +16,6 @@
 @import "./layouts/contacts";
 @import "./layouts/footer";
 @import "./component/modal";
+
 @import "./component/mobile";
 @import "./utils/mixin";

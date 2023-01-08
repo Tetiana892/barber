@@ -40,6 +40,7 @@
           </button>
         </div>
       </div>
+
       <button
         type="button"
         class="menu-toggle js-open-menu"
@@ -112,21 +113,62 @@
           <div>
             <ul class="list-about">
               <li class="about-items">
-                <img
-                  src="./img/shaving-min.jpg"
-                  alt="shaving"
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/shaving-min.jpg    1x,
+                      ./img/shaving-2x-min.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/shaving_tab-min.jpg    1x,
+                      ./img/shaving_tab-2x-min.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+
+                  <img
+                    srcset="
+                      ./img/shaving-min.jpg    1x,
+                      ./img/shaving-2x-min.jpg 2x
+                    "
+                    src="./img/shaving-min.jpg"
+                    alt="shaving"
+                    width="270"
+                    height="445"
+                  />
+                </picture>
               </li>
 
               <li class="about-items">
-                <img
-                  src="./img/haircut-min.jpg"
-                  alt="a haircut"
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/haircut-min.jpg    1x,
+                      ./img/haircut-2x-min.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/haircut_tab-min.jpg    1x,
+                      ./img/haircut_tab-2x-min.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    srcset="
+                      ./img/haircut-min.jpg    1x,
+                      ./img/haircut-2x-min.jpg 2x
+                    "
+                    src="./img/haircut-min.jpg"
+                    alt="a haircut"
+                    width="270"
+                    height="445"
+                  />
+                </picture>
               </li>
             </ul>
           </div>

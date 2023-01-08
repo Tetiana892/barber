@@ -67,14 +67,14 @@
 .icon-menu {
   fill: var(--light-text);
 }
-// .menu-contant {
-//   display: flex;
-//   flex-direction: column;
-//   flex-wrap: wrap;
-//   // height: 100%;
-//   // width: 100%;
-//   justify-content: space-between;
-//   padding-top: 48px;
-//   padding-left: 40px;
-//   padding-bottom: 48px;
-// }
+.menu-contant {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+}
