@@ -306,12 +306,33 @@
           </h2>
           <ul class="barbers-list list">
             <li class="barbers-items">
-              <img
-                src="./img/john-min.jpg"
-                alt="foto John"
-                width="370"
-                height="345"
-              />
+              <picture>
+                <source
+                  srcset="./img/john-min.jpg 1x, ./img/john-2x-min.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/john_tab-min.jpg    1x,
+                    ./img/john_tab-2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/john_tel-min.jpg    1x,
+                    ./img/john_tel-2x-min.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="./img/john-min.jpg 1x, ./img/john-2x-min.jpg 2x"
+                  src="./img/john-min.jpg"
+                  alt="foto John"
+                  width="370"
+                  height="345"
+                />
+              </picture>
 
               <h3 class="barbers-name">John Smith</h3>
               <p class="barbers-info">Extreme Barber</p>

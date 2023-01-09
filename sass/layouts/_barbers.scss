@@ -1,5 +1,11 @@
 .barbers {
-  padding: 120px 0;
+  padding: 84px 0;
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 120px 0;
+  }
   background-color: var(--second-header-color);
 }
 .barbers-pre-title {
@@ -21,14 +27,23 @@
   color: var(--light-text);
 }
 .barbers-list {
-  display: flex;
-}
-.barbers-items {
-  flex-basis: calc((100% - 60px) / 3);
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
+
+.barbers-items:not(:last-child) {
+  flex-basis: 100%;
+  margin-bottom: 64px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    flex-basis: calc((100% - 60px) / 3);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
 .barbers-name {
   margin-top: 30px;
   margin-bottom: 8px;
