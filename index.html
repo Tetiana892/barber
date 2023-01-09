@@ -369,12 +369,34 @@
               </ul>
             </li>
             <li class="barbers-items">
-              <img
-                src="./img/michele-min.jpg"
-                alt="foto Michele"
-                width="370"
-                height="345"
-              />
+              <picture>
+                <source
+                  srcset="./img/michele-min.jpg 1x, ./img/michele-2x-min.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/michele_tab-min.jpg    1x,
+                    ./img/michele_tab-2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/michele_tel-min.jpg    1x,
+                    ./img/michele_tel-2x-min.jpg
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="./img/michele-min.jpg 1x, ./img/michele-2x-min.jpg 2x"
+                  src="./img/michele-min.jpg"
+                  alt="foto Michele"
+                  width="370"
+                  height="345"
+                />
+              </picture>
+
               <h3 class="barbers-name">Michele Doe</h3>
               <p class="barbers-info">Extreme Barber</p>
               <ul class="comand-soc-list">
@@ -409,12 +431,34 @@
               </ul>
             </li>
             <li class="barbers-items">
-              <img
-                src="./img/alan-min.jpg"
-                alt="foto Alan"
-                width="370"
-                height="345"
-              />
+              <picture>
+                <source
+                  srcset="./img/alan-min.jpg 1x, ./img/alan-2x-min.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/alan_tab-min.jpg    1x,
+                    ./img/alan_tab-2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/alan_tel-min.jpg    1x,
+                    ./img/alan_tel-2x-min.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="./img/alan-min.jpg 1x, ./img/alan-2x-min.jpg 2x"
+                  src="./img/alan-min.jpg"
+                  alt="foto Alan"
+                  width="370"
+                  height="345"
+                />
+              </picture>
+
               <h3 class="barbers-name">Alan Black</h3>
               <p class="barbers-info">Extreme Barber</p>
               <ul class="comand-soc-list">
@@ -459,12 +503,33 @@
           <h2 class="visually-hidden title">Gallery</h2>
           <ul class="gallery-list">
             <li class="gallery-item">
-              <img
-                src="./img/foto_1-min.jpg"
-                alt="hairdresser doing a haircut"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="./img/foto_1-min.jpg 1x, ./img/foto_1-2x-min.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/foto_1_tab-min.jpg    1x,
+                    ./img/foto_1_tab-2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/foto_1_tel-min.jpg    1x,
+                    ./img/foto_1_tel-2x-min.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  srcset="./img/foto_1-min.jpg 1x, ./img/foto_1-2x-min.jpg 2x"
+                  src="./img/foto_1-min.jpg"
+                  alt="hairdresser doing a haircut"
+                  width="270"
+                  height="360"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
               <img
@@ -525,50 +590,62 @@
           <div>
             <section class="contacts">
               <h2 class="contacts-title title">Contacts</h2>
-              <address class="address">
-                <ul>
-                  <li>
-                    <svg width="16" height="18" class="contacts-icon location">
-                      <use href="./img/symbol-defs.svg#icon-location2"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg width="16" height="16" class="contacts-icon phone">
-                      <use href="./img/symbol-defs.svg#icon-phone"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg width="18" height="14" class="contacts-icon">
-                      <use href="./img/symbol-defs.svg#icon-mail2"></use>
-                    </svg>
-                  </li>
-                </ul>
-                <ul class="contacts-list list">
-                  <li class="contacts-items">
-                    <a
-                      href="https://goo.gl/maps/63yzwZstcppbkDaC6"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      class="contact-links link contact-address"
-                      >st. Vasylkivska, 7A Kyiv, 08132</a
-                    >
-                  </li>
-                  <li class="contacts-items">
-                    <a href="tel:+380441111111" class="contact-links link"
-                      >+38 044 111 11 11</a
-                    >
-                  </li>
-                  <li class="contacts-items">
-                    <a
-                      href="mailto:barbershop@email.com"
-                      class="contact-links link"
-                      >barbershop@email.com</a
-                    >
-                  </li>
-                </ul>
-              </address>
-              <p class="contacts-pre-title pre-title">Working hours</p>
-              <p class="contacts-text">Every day from 9:00 to 22:00</p>
+              <div class="soc-contacts">
+                <div>
+                  <address class="address">
+                    <ul>
+                      <li>
+                        <svg
+                          width="16"
+                          height="18"
+                          class="contacts-icon location"
+                        >
+                          <use
+                            href="./img/symbol-defs.svg#icon-location2"
+                          ></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg width="16" height="16" class="contacts-icon phone">
+                          <use href="./img/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg width="18" height="14" class="contacts-icon">
+                          <use href="./img/symbol-defs.svg#icon-mail2"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <ul class="contacts-list list">
+                      <li class="contacts-items">
+                        <a
+                          href="https://goo.gl/maps/63yzwZstcppbkDaC6"
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                          class="contact-links link contact-address"
+                          >st. Vasylkivska, 7A Kyiv, 08132</a
+                        >
+                      </li>
+                      <li class="contacts-items">
+                        <a href="tel:+380441111111" class="contact-links link"
+                          >+38 044 111 11 11</a
+                        >
+                      </li>
+                      <li class="contacts-items">
+                        <a
+                          href="mailto:barbershop@email.com"
+                          class="contact-links link"
+                          >barbershop@email.com</a
+                        >
+                      </li>
+                    </ul>
+                  </address>
+                </div>
+                <div class="soc-text">
+                  <p class="contacts-pre-title pre-title">Working hours</p>
+                  <p class="contacts-text">Every day from 9:00 to 22:00</p>
+                </div>
+              </div>
             </section>
           </div>
         </div>

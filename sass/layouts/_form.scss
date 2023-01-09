@@ -1,19 +1,33 @@
 .contact-wrap {
   background-color: #191c26;
-  background-image: url("../img/bg-min.png");
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: center right calc(50% - 15px - 392px);
+  @media screen and(min-width:1200px) {
+    background-image: url("../img/bg-min.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center right calc(50% - 15px - 392px);
+  }
 }
+
 .contact-wrap > .container {
-  display: flex;
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
 }
 
 .form {
-  width: calc(50% + 15px);
-  padding-top: 130px;
-  padding-bottom: 183px;
+  padding: 84px 31px;
+  text-align: center;
+  @media screen and(min-width:768px) {
+    padding: 100px 40px;
+    text-align: start;
+  }
+  @media screen and(min-width:768px) {
+    width: calc(50% + 15px);
+    padding-top: 130px;
+    padding-bottom: 183px;
+  }
 }
+
 .form-title {
   color: var(--primari-header-color);
   margin-bottom: 44px;
@@ -51,17 +65,35 @@
   color: var(--primari-header-color);
 }
 .contact-input {
-  width: 270px;
   height: 24px;
+  width: 418px;
+  @media screen and(min-width:768px) {
+    min-width: 330px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 260px;
+  }
 }
-.contact-input:first-child {
-  margin-right: 30px;
+@media screen and(min-width:768px) {
+  .contact-input:first-child {
+    margin-right: 30px;
+  }
 }
 .contact-textarea {
-  width: 570px;
+  width: 418px;
   height: 76px;
   resize: none;
+  @media screen and(min-width:768px) {
+    width: 690px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 545px;
+  }
 }
 .user {
   display: flex;
+  flex-wrap: wrap;
+  @media screen and(min-width:768px) {
+    flex-wrap: nowrap;
+  }
 }
