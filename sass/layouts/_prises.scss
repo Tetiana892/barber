@@ -34,10 +34,11 @@
   color: var(--primari-header-color);
 }
 .prices-list-wrap {
-  margin-bottom: 74px;
+  margin-bottom: 44px;
   @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
+    margin-bottom: 74px;
   }
 }
 .prices-list {
@@ -85,5 +86,4 @@
   color: var(--primari-header-color);
   margin: 0 auto;
   display: block;
-  margin-top: 44px;
 }

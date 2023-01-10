@@ -39,21 +39,21 @@
             Online-booking
           </button>
         </div>
+        <button
+          type="button"
+          class="menu-toggle-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use
+              class="icon-cross"
+              href="./img/symbol-defs.svg#icon-menu_24px"
+            ></use>
+          </svg>
+        </button>
       </div>
 
-      <button
-        type="button"
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-          <use
-            class="icon-cross"
-            href="./img/symbol-defs.svg#icon-menu_24px"
-          ></use>
-        </svg>
-      </button>
       <div class="menu-container js-menu-container" id="mobile-menu">
         <div class="container container--mobile">
           <button type="button" class="menu-toggle js-close-menu">
@@ -65,16 +65,47 @@
             </svg>
           </button>
           <div class="menu-contant">
-            <nav class="mob-navigation">
-              <ul class="header-list-mob">
-                <li><a href="" class="header-link-mob">About</a></li>
+            <div>
+              <nav class="mob-navigation">
+                <ul class="list-mob">
+                  <li><a href="" class="header-link-mob current">About</a></li>
+                  <li>
+                    <a href="" class="header-link-mob">Services and prices</a>
+                  </li>
+                  <li><a href="" class="header-link-mob">Barbers</a></li>
+                  <li><a href="" class="header-link-mob">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mob-connektion-cont">
+              <a href="tel:+380441111111" class="mob-connektion-tel"
+                >+38 044 111 11 11</a
+              >
+              <button type="button" class="mob-connektion-btn" data-modal-open>
+                Online-booking
+              </button>
+            </div>
+
+            <div class="mobile-soc">
+              <ul class="mobile-list">
                 <li>
-                  <a href="" class="header-link-mob">Services and prices</a>
+                  <a
+                    href=""
+                    rel="noopener noreferrer nofollow"
+                    class="mobile-link"
+                    >Instagram</a
+                  >
                 </li>
-                <li><a href="" class="header-link-mob">Barbers</a></li>
-                <li><a href="" class="header-link-mob">Contacts</a></li>
+                <li>
+                  <a
+                    href=""
+                    rel="noopener noreferrer nofollow"
+                    class="mobile-link"
+                    >Youtube</a
+                  >
+                </li>
               </ul>
-            </nav>
+            </div>
           </div>
         </div>
       </div>
@@ -587,7 +618,7 @@
               </form>
             </section>
           </div>
-          <div>
+          <div class="contact-trumb">
             <section class="contacts">
               <h2 class="contacts-title title">Contacts</h2>
               <div class="soc-contacts">
@@ -641,7 +672,7 @@
                     </ul>
                   </address>
                 </div>
-                <div class="soc-text">
+                <div class="soc-contacts">
                   <p class="contacts-pre-title pre-title">Working hours</p>
                   <p class="contacts-text">Every day from 9:00 to 22:00</p>
                 </div>
