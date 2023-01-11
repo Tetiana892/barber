@@ -160,12 +160,11 @@ button:hover, button:focus {
 .header-logo {
   display: block;
   margin-right: auto;
+  fill: #303030;
 }
 @media screen and (min-width: 768px) {
-  .header-logo {
-    background-color: #fff;
+  .header-logo:hover {
     fill: #fff;
-    color: #fff;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1047,9 +1046,13 @@ button:hover, button:focus {
 }
 
 .contacts-pre-title {
-  margin-top: 70px;
   margin-bottom: 20px;
   color: var(--primari-header-color);
+}
+@media screen and (min-width: 1200px) {
+  .contacts-pre-title {
+    margin-top: 70px;
+  }
 }
 
 .contacts-text {
@@ -1101,7 +1104,7 @@ button:hover, button:focus {
   .soc-contacts {
     display: flex;
     gap: 30px;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1469,7 +1472,7 @@ label.modal-politic-label {
 .menu-toggle {
   display: block;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 100px;
   min-height: 19px;
   min-width: 19px;
   background-color: transparent;

@@ -37,8 +37,10 @@
   font-weight: 700;
 }
 .contacts-pre-title {
-  margin-top: 70px;
   margin-bottom: 20px;
+  @media screen and(min-width:1200px) {
+    margin-top: 70px;
+  }
   color: var(--primari-header-color);
 }
 .contacts-text {
@@ -80,7 +82,7 @@
   @media screen and(min-width:768px) {
     display: flex;
     gap: 30px;
-    align-items: center;
+    align-items: flex-start;
   }
   @media screen and(min-width:1200px) {
     flex-direction: column;
