@@ -5,12 +5,6 @@
 .hero-right {
   padding: 208px 113px 209px 31px;
 
-  @media screen and (min-width: 768px) {
-    padding: 272px 0 237px 120px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 272px 0 206px 96px;
-  }
   flex-grow: 1;
 
   background-image: linear-gradient(
@@ -19,46 +13,46 @@
     ),
     url("..//../img/header_tel-min.jpg");
 
-  // @include retina {
-  //   background-image: linear-gradient(
-  //       rgba(25, 28, 38, 0.2),
-  //       rgba(25, 28, 38, 0.2)
-  //     ),
-  //     url("..//../img/header_tel-2x-min.jpg");
-  // }
+  @include retina {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url("..//../img/header_tel-2x-min.jpg");
+  }
 
-  // @media screen and (min-width: 768px) {
-  //   padding: 272px 0 237px 120px;
-  //   background-image: linear-gradient(
-  //       rgba(25, 28, 38, 0.2),
-  //       rgba(25, 28, 38, 0.2)
-  //     ),
-  //     url("..//../img/header_tab-min.jpg");
+  @media screen and (min-width: 768px) {
+    padding: 272px 0 237px 120px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url("..//../img/header_tab-min.jpg");
 
-  //   @include retina {
-  //     background-image: linear-gradient(
-  //         rgba(25, 28, 38, 0.2),
-  //         rgba(25, 28, 38, 0.2)
-  //       ),
-  //       url("..//../img/header_tab-2x-min.jpg");
-  //   }
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   padding: 272px 0 206px 96px;
-  //   background-image: linear-gradient(
-  //       rgba(25, 28, 38, 0.2),
-  //       rgba(25, 28, 38, 0.2)
-  //     ),
-  //     url("..//../img/header-min.jpg");
+    @include retina {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url("..//../img/header_tab-2x-min.jpg");
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 272px 0 206px 96px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url("..//../img/header-min.jpg");
 
-  //   @include retina {
-  //     background-image: linear-gradient(
-  //         rgba(25, 28, 38, 0.2),
-  //         rgba(25, 28, 38, 0.2)
-  //       ),
-  //       url("..//../img/header-2x-mun.jpg");
-  //   }
-  // }
+    @include retina {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url("..//../img/header-2x-min.jpg");
+    }
+  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
