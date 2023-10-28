@@ -2,19 +2,19 @@
 
 ## Website with a responsive layout, adapted for computer
 
-<img src="./assets/Screenshot_1.jpg">
+<img src="./assets/Screenshot_1.jpg" alt="Home page">
 
 ## laptop
 
-<img src="./assets/Screenshot_4.jpg" width="400px">
+<img src="./assets/Screenshot_4.jpg" width="400px" alt="Home page for laptop">
 
 ## and mobile versions.
 
-<img src="./assets/Screenshot_5.jpg" width="300px">
+<img src="./assets/Screenshot_5.jpg" width="200px" alt="Home page for mobile">
 
 ## Modal window with registration form
 
-<img src="./assets/Screenshot_2.jpg">
+<img src="./assets/Screenshot_2.jpg" width="200px" alt="Register form">
 
 ## Link to the app
 
